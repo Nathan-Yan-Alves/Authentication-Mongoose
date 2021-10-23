@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Authentication</title>
+
+        <link rel="stylesheet" href="/styles/main.css" />
+    </head>
+    <body>
+        <div class="container">
+            <div class="account-container">
+                <h2 class="title">Faça seu login ou crie uma conta!</h2>
+                <div class="login-inp">
+                    <form action="/login" method="post">
+                        <input
+                            type="text"
+                            name="username"
+                            id="usernameLogin"
+                            placeholder="Digite seu usuário"
+                        />
+                        <input
+                            type="password"
+                            name="password"
+                            id="passwordLogin"
+                            placeholder="Digite sua senha"
+                        />
+                        <button type="submit">Entrar</button>
+                    </form>
+                </div>
+                <div class="division">ou</div>
+                <div class="create-acc-inp">
+                    <form action="/new" method="post">
+                        <input
+                            type="text"
+                            name="username"
+                            id="usernameCreate"
+                            placeholder="Digite seu usuário"
+                        />
+                        <input
+                            type="password"
+                            name="password"
+                            id="passwordCreate"
+                            placeholder="Digite sua senha"
+                        />
+                        <button type="submit">Registrar-se</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
